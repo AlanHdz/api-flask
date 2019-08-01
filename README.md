@@ -8,19 +8,29 @@ API creada en el framework Flask con autenticación de usuarios y migraciones, u
 
 ## Guía de instalación
 
-###### Clonar repositorio
-> $ git clone https://github.com/AlanHdz/api-flask.git
-> cd api-flask
+** Clonar repositorio **
+```
+$ git clone https://github.com/AlanHdz/api-flask.git
+$ cd api-flask
+```
 
-###### Crear virtualenv
+** Crear virtualenv **
+```
 > $ virtualenv env
+```
 
-###### Instalar las dependencias
+** Instalar las dependencias **
+```
 > $ pip install -r requirements.txt
+```
 
-###### Correr aplicación
+** Correr aplicación **
 Nota: No te olvides de configurar tu base de datos en el archivo config.py
+```
 > $ python manage.py runserver
+```
 
-# Test
+## Test
+```
 > $ python manage.py test
+```
