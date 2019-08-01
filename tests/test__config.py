@@ -16,7 +16,7 @@ class TestDevelopmentConfig(unittest.TestCase):
 		self.assertTrue(self.app.config['DEBUG'] is True)
 		self.assertFalse(current_app is None)
 		self.assertTrue(
-			self.app.config['SQLALCHEMY_DATABASE_URI'] == 'your_database_uri'
+			self.app.config['SQLALCHEMY_DATABASE_URI'] == 'mysql://username:password@host/db_name'
 		)
 
 class TestTestingConfig(unittest.TestCase):
@@ -30,5 +30,5 @@ class TestTestingConfig(unittest.TestCase):
 		self.assertFalse(self.app.config['SECRET_KEY'] is 'my_precious')
 		self.assertTrue(self.app.config['DEBUG'])
 		self.assertTrue(
-			self.app.config['SQLALCHEMY_DATABASE_URI'] == 'your_databse_uri'
+			self.app.config['SQLALCHEMY_DATABASE_URI'] == 'mysql://username:password@host/db_name'
 		)
