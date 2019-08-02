@@ -25,7 +25,9 @@ $ cd api-flask
 ```
 
 **Correr aplicación**
+
 Nota: No te olvides de configurar tu base de datos en el archivo config.py
+
 ```
 > $ python manage.py runserver
 ```
